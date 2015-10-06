@@ -23,7 +23,7 @@
 			header {
 				color: white;
 				background-color: #1abc9c;
-				padding-bottom: 20px;
+				padding-bottom: 25px;
 			}
 			header a, header a:link, header a:active, header a:visited {
 				color: #10715E;
@@ -88,6 +88,42 @@
 				padding: 4px 0;
 			}
 
+			#skills li {
+				padding: 8px 0;
+			}
+
+			#skills .category {
+				width: 30%;
+				float: left;
+				color: #7f8c8d;
+				text-transform: uppercase;
+				font-family: 'Bitter', serif;
+			}
+
+			#skills .values {
+				width: 70%;
+				float: left;
+			}
+
+			.tag {
+				background-color: #ecf0f1;
+				padding: 5px 10px;
+				position: relative;
+				margin-right: 20px;
+			}
+
+			.tag:before {
+				content: "";
+				position: absolute;
+				top:0;
+				left: -13px;
+				width: 0;
+				height: 0;
+				border-color: transparent #ecf0f1 transparent transparent;
+				border-style: solid;
+				border-width: 13px 13px 13px 0;
+			}
+
 			#experience li {
 				padding-bottom: 20px;
 			}
@@ -133,23 +169,53 @@
 			</div>
 		</header>
 		<div>
-			<section class="container clearfix">
+			<section id="skills" class="container clearfix">
 				<h2>Skills</h2>
 				<ul class="column-right">
-					<li><b>Languages:</b> Perl, Python, PHP5, Java, Objective C</li>
-					<li><b>Paradigms:</b> Procedural, Object, Event driven</li>
-					<li><b>Databases:</b> MySQL, SQLite, OpenLink Virtuoso</li>
-					<li><b>Search engines:</b> Zebra, Lucene/Solr</li>
-					<li><b>Web:</b> REST and XML-RPC Web Services, AJAX, Semantic Web, RDF, OWL, SPARQL, HTML5, CSS3, JQuery</li>
-					<li><b>Web Frameworks:</b> Python Django, Perl Dancer, PHP CodeIgniter</li>
-					<li><b>CMS:</b> Drupal, Wordpress</li>
-					<li><b>Mobile:</b> Native iOS and Android, Cordova, Phonegap, Ionic</li>
-					<li><b>GUI:</b> GTK, UIKit, SVG, Windows Forms, Swing</li>
-					<li><b>OS:</b> Linux (Debian, Ubuntu, Arch, OpenELEC)</li>
-					<li><b>Versionning:</b> GIT, SVN, Mercurial</li>
-					<li><b>Template engines:</b> Django templating, XSLT, HTML::Template::Pro, Template::Declare</li>
-					<li><b>IT for Libraries:</b> Koha, SOPAC, MARC standards, ISO2709, Z3950</li>
-					<li><b>Foreign Languages:</b> English</li>
+					<li class="clearfix">
+						<div class="category">Languages:</div>
+						<div class="values"><span class="tag">Perl</span> <span class="tag">Python</span> <span class="tag">PHP5</span> <span class="tag">Java</span> <span class="tag">Obj&nbsp;C</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">Databases:</div>
+						<div class="values"><span class="tag">MySQL</span> <span class="tag">SQLite</span> <span class="tag">OpenLink Virtuoso</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">Search engines:</div>
+						<div class="values"><span class="tag">Zebra</span> <span class="tag">Lucene/Solr</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">Web:</div>
+					<div class="values"><span class="tag">REST</span> <span class="tag">AJAX</span> <span class="tag">Bootstrap</span> <span class="tag">JQuery</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">Web Frameworks:</div>
+						<div class="values"><span class="tag">Python Django</span> <span class="tag">Perl Dancer</span> <span class="tag">PHP CodeIgniter</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">CMS:</div>
+						<div class="values"><span class="tag">Drupal</span> <span class="tag">Wordpress</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">Mobile:</div>
+						<div class="values"><span class="tag">Native</span> <span class="tag">Cordova</span> <span class="tag">Phonegap</span> <span class="tag">Ionic</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">GUI:</div>
+						<div class="values"><span class="tag">GTK</span> <span class="tag">UIKit</span> <span class="tag">SVG</span> <span class="tag">Swing</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">OS:</div>
+						<div class="values"><span class="tag">Debian</span> <span class="tag">Ubuntu</span> <span class="tag">Arch</span> <span class="tag">OpenELEC</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">Versionning:</div>
+						<div class="values"><span class="tag">GIT</span> <span class="tag">SVN</span> <span class="tag">Mercurial</span></div>
+					</li>
+					<li class="clearfix">
+						<div class="category">IT for Libraries:</div>
+						<div class="values"><span class="tag">Koha</span> <span class="tag">MARC</span> <span class="tag">ISO2709</span> <span class="tag">Z3950</span></div>
+					</li>
 				</ul>
 			</section>
 
@@ -157,13 +223,13 @@
 				<h2>Projects</h2>
 				<ul class="column-right">
 					<li><a href="http://www.lakka.tv">Lakka</a> (2013-2016)</li>
-					An embedded Operating System to build open video game consoles. Based on OpenELEC.
-					<li><a href="https://www.youtube.com/watch?v=lsZ5mHgufvI">La Comptesse de Cagliostro</a></li>
-					iOS and Android Native app
+					An embedded Operating System to build open video game consoles. Based on OpenELEC. Became famous in the embedded emulation scene. Supports a lot of ARM devboards.
+					<li><a href="https://www.youtube.com/watch?v=lsZ5mHgufvI">La Comptesse de Cagliostro</a> (2014)</li>
+					iOS and Android Native app.
 					<li><a href="https://vimeo.com/citronours">Citronours ebooks</a> (2013)</li>
-					iOS ebook publisher startup
+					iOS ebook publisher startup. We published 5 books about DIY knitting, origami, decorations. Each book being a native iOS App. 
 					<li><a href="http://www.stellaria.fr">Stellaria</a> (2013)<br>
-					An astrology app for iOS</li>
+					An astrology app for iOS. I sell it on the App Store. Costumers love its neat interface.</li>
 					<li><a href="https://github.com/Kivutar/semantica">Semantica</a> (2013)<br>
 					Semantic database with strong support of Unicode and graph vizualisation, Perl Dancer, RDF, RDFS, OWL, SPARQL, sigma.js</li>
 					<li><a href="http://www.calenda.org">Calenda</a> (2011-2012)<br>
@@ -174,8 +240,8 @@
 					Replacing Zebra by Solr in the Koha Integrated Library System</li>
 					<li><a href="http://www.semlib.org">SemLib</a> (2010)<br>
 					Semantic bibliographic database, Django and Solr.</li>
-					<li><a href="http://www.mabinogi.fr/">Mabinogi.fr</a> (2006-2010)<br>
-					Drupal powered community website.</li>
+					<li><a href="http://www.mabinogi.fr/">Mabinogi.fr</a> (2006-2016)<br>
+					Drupal powered community website. Hosted and maintained during 10 years.</li>
 					<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=265248">EXSLT Math</a> (2009)<br>
 					Implementation of EXSLT Math in Mozilla Firefox.</li>
 					<li><a href="https://launchpad.net/astrows">AstroWS</a> (2009)<br>
@@ -213,6 +279,7 @@
 			<section class="container clearfix">
 				<h2>Education</h2>
 				<ul class="column-right">
+					<li><b>I've been learning programming by myself from I am 12 years old.</b></li>
 					<li><b>2008/2009 :</b> AFPA (Visual Studio, C#, ASP, Windows Forms, Merise, UML, SQL Server)</li>
 					<li><b>2004/2006 :</b> Institut Supérieur d'Ostéopathie</li>
 					<li><b>2003/2004 :</b> Préparation au concours de Kinésithérapeute</li>
@@ -224,8 +291,8 @@
 				<h2>Hobbies</h2>
 				<ul class="column-right">
 					<li>Piano, Cooking, Reading, Drawing</li>
-					<li>IT, Video Games</li>
-					<li>Travelling (Europe, India, Vietnam)</li>
+					<li>Programming, Video Games</li>
+					<li>Travelling and living in foreign countries (Europe, India, Vietnam)</li>
 				</ul>
 			</section>
 		</div>
