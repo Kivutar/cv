@@ -3,94 +3,139 @@
 	<head>	
 		<title>Resume of Jean-André Santoni, Software Developer</title>
 		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<style type="text/css">
+			.clearfix:after {
+				content: ".";
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden;
+			}
 			body {
-				font-family: Verdana;
-				font-size: 0.8em;
-				max-width: 900px;
+				font-family: 'Droid Serif', serif;
+				font-size: 0.9em;
+				margin: 0;
+			}
+			header {
+				color: white;
+				background-color: #1abc9c;
+				padding-bottom: 20px;
+			}
+			header a, header a:link, header a:active, header a:visited {
+				color: #10715E;
+				text-decoration: none;
+			}
+			header a:hover {
+				color: #08382F;
+			}
+			header #photo {
+				width: 150px;
+				height: 150px;
+				background-color: white;
+				margin-top: 110px;
+				margin-right: 50px;
+				float: left;
+				border-radius: 50%;
+				background: url(https://avatars3.githubusercontent.com/u/442722?v=3&s=460) 50% 50%;
+				background-size: 110%;
+			}
+			.column-right {
+				float: left;
+				width: 600px;
+			}
+			ul {
+				padding: 0;
+				list-style: none;
+			}
+			header h1 {
+				font-family: 'Slabo 27px', serif;
+				font-size: 50px;
+				padding-top: 120px;
+				margin: 0;
+			}
+			h2 {
+				text-transform: uppercase;
+				font-family: 'Bitter', serif;
+			}
+			header .contact {
+				color: #10715E;
+			}
+			.container {
+				width: 900px;
 				margin: 0 auto;
-				background-color: #eeeeee;
-				padding: 30px;
 			}
-			#main {
-				background-color: #ffffff;
-				-moz-border-radius: 0.75em;
-				border-radius: 0.75em;
-				padding: 30px;
+			section {
+				margin-top: 40px !important;
 			}
-			h1 {
-				text-align: center;
-			}
-			#comp h2 {
-				border-bottom: 2px solid #aaaaff;
-			}
-			
-			#xp h2 {
-				border-bottom: 2px solid #aaffaa;
-			}
-			#prof h2 {
-				border-bottom: 2px solid #ffffaa;
-			}
-			#form h2 {
-				border-bottom: 2px solid #ffccaa;
-			}
-			#loisir h2,
-			#perso h2 {
-				border-bottom: 2px solid #ffaaaa;
-			}
-			h3 {
-				color: #aaaa66;
+			section h2 {
+				color: #1abc9c;
+				width: 200px;
+				float: left;
 			}
 			a, a:link, a:active, a:visited {
-				color: #0000aa;
+				color: #1abc9c;
+				text-decoration: none;
 			}
 			a:hover {
-				color: #8888ff;
+				color: #10715E;
 			}
-			ul, #head {
-				padding: 15px 15px 15px 30px;
-				-moz-border-radius: 0.75em;
-				border-radius: 0.75em;
-			}
-			#comp ul {
-				background-color: #efefff;
-			}
-			#xp ul {
-				background-color: #efffef;
-			}
-			#prof ul {
-				background-color: #ffffef;
-			}
-			#form ul {
-				background-color: #fff5ef;
-			}
-			#loisir ul,
-			#perso ul {
-				background-color: #ffefef;
-			}
-			#head {
-				background-color: #ffefff;
-			}
+			
 			li {
+				padding: 4px 0;
+			}
+
+			#experience li {
+				padding-bottom: 20px;
+			}
+
+			.company {
+				font-size: 1.3em;
+				padding-bottom: 3px;
+			}
+
+			.position {
+				border-bottom: 2px solid #1abc9c;
+				padding: 4px 0;
+			}
+
+			.mission {
+				color: #7f8c8d;
+				width: 85%;
 				padding: 3px 0;
+			}
+
+			.date {
+				background-color: #1abc9c;
+				color: white;
+				float: right;
+				padding: 3px 6px;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="main">
-			<h1>Software Developper</h1>
-			<div id="head">
-				<p><b>Jean-André SANTONI</b><br>
-				Ho Chi Minh City, Vietnam<br>
-				(+33) 07 78 82 14 07<br>
-				<a href="http://www.kivutar.me">Website</a><br>
-				<a href="mailto:jean.andre.santoni@gmail.com">jean.andre.santoni@gmail.com</a><br>
-				Born on June, 8, 1984 (31 years old)</p>
+		<header>
+			<div class="container clearfix">
+				<div id="photo"></div>
+				
+				<div class="column-right">			
+					<h1>Jean-André Santoni</h1>
+					<h2>Web & Mobile Development</h2>
+					<p class="contact">
+					<a href="https://www.google.com/maps/place/Ph%C3%BA+Nhu%E1%BA%ADn,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8010027,106.6801709,15z/data=!3m1!4b1!4m2!3m1!1s0x317528de40e13437:0xea826e922f426e21"><i class="fa fa-map-marker"></i> HCMC, Vietnam</a> |
+					<a href="tel:0778821407"><i class="fa fa-phone"></i>&nbsp;(+33)0778821407</a> |
+					<a href="http://www.kivutar.me"><i class="fa fa-globe"></i> www</a> |
+					<a href="mailto:jean.andre.santoni@gmail.com"><i class="fa fa-envelope"></i>&nbsp;jean.andre.santoni@gmail.com</a></p>
+				</div>
 			</div>
-			
-			<section id="comp">
-				<h2>Skills:</h2>
-				<ul>
+		</header>
+		<div>
+			<section class="container clearfix">
+				<h2>Skills</h2>
+				<ul class="column-right">
 					<li><b>Languages:</b> Perl, Python, PHP5, Java, Objective C</li>
 					<li><b>Paradigms:</b> Procedural, Object, Event driven</li>
 					<li><b>Databases:</b> MySQL, SQLite, OpenLink Virtuoso</li>
@@ -108,9 +153,9 @@
 				</ul>
 			</section>
 
-			<section id="xp">
-				<h2>Projects and Contributions:</h2>
-				<ul>
+			<section class="container clearfix">
+				<h2>Projects</h2>
+				<ul class="column-right">
 					<li><a href="http://www.lakka.tv">Lakka</a> (2013-2016)</li>
 					An embedded Operating System to build open video game consoles. Based on OpenELEC.
 					<li><a href="https://www.youtube.com/watch?v=lsZ5mHgufvI">La Comptesse de Cagliostro</a></li>
@@ -144,18 +189,30 @@
 				</ul>
 			</section>
 
-			<section id="prof">
-				<h2>Experience:</h2>
-				<ul>
-					<li><b>2013 :</b> <a href="http://www.kivutar.me">Freelance</a></li>
-					<li><b>01/01/2011 - 31/03/2012 :</b> Developer at CNRS (<a href="http://cleo.cnrs.fr">Cléo</a>) - Revues.org, Calenda, Hypothèses</li>
-					<li><b>06/2009 - 01/2011 - CDI :</b> Developer at <a href="http://www.biblibre.com">BibLibre</a> - Koha and Drupal</li>
+			<section id="experience" class="container clearfix">
+				<h2>Experience</h2>
+				<ul class="column-right">
+					<li>
+						<div class="company"><a href="http://www.kivutar.me">Freelance</a></div>
+						<div class="position">Developer <span class="date">2013-2016</date></div>
+						<div class="mission">Development of an embedded Linux distribution for Raspberry Pi. Native mobile apps development for iOS and Android. Web development using Drupal.</div>
+					</li>
+					<li>
+						<div class="company"><a href="http://cleo.cnrs.fr">CNRS Cléo</a></div>
+						<div class="position">Developer <span class="date">2011-2012</span></div>
+						<div class="mission">Development on Revues.org using PHP. Development of a new version of Calenda using PHP and Solr. Maintainance of the Wordpress farm Hypothèses</div>
+					</li>
+					<li>
+						<div class="company"><a href="http://www.biblibre.com">BibLibre</a></div>
+						<div class="position">Developer <span class="date">2009-2011</span></div>
+						<div class="mission">Development and maintainance of the Koha ILS using Perl, Javascript, SQL and Solr. Development of Drupal modules in PHP. Develoment of a Firefox module. Data migration using perl.</div>
+					</li>
 				</ul>
 			</section>
 
-			<section id="form">
-				<h2>Education:</h2>
-				<ul>
+			<section class="container clearfix">
+				<h2>Education</h2>
+				<ul class="column-right">
 					<li><b>2008/2009 :</b> AFPA (Visual Studio, C#, ASP, Windows Forms, Merise, UML, SQL Server)</li>
 					<li><b>2004/2006 :</b> Institut Supérieur d'Ostéopathie</li>
 					<li><b>2003/2004 :</b> Préparation au concours de Kinésithérapeute</li>
@@ -163,9 +220,9 @@
 				</ul>
 			</section>
 
-			<section id="loisir">
+			<section class="container clearfix">
 				<h2>Hobbies</h2>
-				<ul>
+				<ul class="column-right">
 					<li>Piano, Cooking, Reading, Drawing</li>
 					<li>IT, Video Games</li>
 					<li>Travelling (Europe, India, Vietnam)</li>
