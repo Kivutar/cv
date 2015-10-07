@@ -57,7 +57,7 @@
 				padding-top: 120px;
 				margin: 0;
 			}
-			h2 {
+			h2, h3 {
 				text-transform: uppercase;
 				font-family: 'Bitter', serif;
 			}
@@ -76,6 +76,9 @@
 				width: 200px;
 				float: left;
 			}
+			section#projects h2 {
+				float: none;
+			}
 			a, a:link, a:active, a:visited {
 				color: #1abc9c;
 				text-decoration: none;
@@ -86,6 +89,25 @@
 			
 			li {
 				padding: 4px 0;
+			}
+
+			h3 {
+				margin-top: 0;
+			}
+
+			.project {
+				width: 434px;
+				float: left;
+				margin: 16px 16px 16px 0;
+			}
+
+			.logo {
+				width: 100px;
+				height: 100px;
+				/*background-color: #7f8c8d;*/
+				float: left;
+				margin-right: 20px;
+				border-radius: 50%;
 			}
 
 			#skills li {
@@ -219,40 +241,39 @@
 				</ul>
 			</section>
 
-			<section class="container clearfix">
+			<section id="projects" class="container clearfix">
 				<h2>Projects</h2>
-				<ul class="column-right">
-					<li><a href="http://www.lakka.tv">Lakka</a> (2013-2016)</li>
-					An embedded Operating System to build open video game consoles. Based on OpenELEC. Became famous in the embedded emulation scene. Supports a lot of ARM devboards.
-					<li><a href="https://www.youtube.com/watch?v=lsZ5mHgufvI">La Comptesse de Cagliostro</a> (2014)</li>
-					iOS and Android Native app.
-					<li><a href="https://vimeo.com/citronours">Citronours ebooks</a> (2013)</li>
-					iOS ebook publisher startup. We published 5 books about DIY knitting, origami, decorations. Each book being a native iOS App. 
-					<li><a href="http://www.stellaria.fr">Stellaria</a> (2013)<br>
-					An astrology app for iOS. I sell it on the App Store. Costumers love its neat interface.</li>
-					<li><a href="https://github.com/Kivutar/semantica">Semantica</a> (2013)<br>
-					Semantic database with strong support of Unicode and graph vizualisation, Perl Dancer, RDF, RDFS, OWL, SPARQL, sigma.js</li>
-					<li><a href="http://www.calenda.org">Calenda</a> (2011-2012)<br>
-					Calenda, the scientific event calendar, PHP, Mysql, Solr
-					<li><a href="https://www.youtube.com/watch?v=XrjzFce7XYY">Tethical</a> (2011-2012)<br>
-					3D strategy video game over network</li>
-					<li><a href="#">Integrating Solr and Koha</a> (2010)<br>
-					Replacing Zebra by Solr in the Koha Integrated Library System</li>
-					<li><a href="http://www.semlib.org">SemLib</a> (2010)<br>
-					Semantic bibliographic database, Django and Solr.</li>
-					<li><a href="http://www.mabinogi.fr/">Mabinogi.fr</a> (2006-2016)<br>
-					Drupal powered community website. Hosted and maintained during 10 years.</li>
-					<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=265248">EXSLT Math</a> (2009)<br>
-					Implementation of EXSLT Math in Mozilla Firefox.</li>
-					<li><a href="https://launchpad.net/astrows">AstroWS</a> (2009)<br>
-					Astrology web services, Python, SVG, XSLT.</li>
-					<li><a href="http://www.biblibre.com/node/120">SOPAC Middleware</a> (03/2009 et 04/2009)<br>
-					Connecting SOPAC and KOHA in PHP</li>
-					<li><a href="http://www.biblibre.com/node/120">Services Web ILS-DI</a> (03/2009 et 04/2009)<br>
-					Web Services for Koha, using Perl.</li>
-					<li><a href="http://code.google.com/p/astrognome">Astrognome</a> (2007-2008)<br>
-					Free astrology software with 3 implementations: Python, C#, Java.</li>
-				</ul>
+
+				<div class="project clearfix">
+					<img class="logo" src="lakka.png" />
+					<h3><a href="http://www.lakka.tv">Lakka</a></h3>
+					<p>An embedded Operating System to build open video game consoles. Based on OpenELEC. Became famous in the embedded emulation scene. Supports a lot of ARM devboards.</p>
+				</div>
+				<div class="project clearfix">
+					<img class="logo" src="citronours.jpg" />
+					<h3><a href="https://vimeo.com/citronours">Citronours</a></h3>
+					<p>An iOS ebook publishing house startup. We published 5 books about DIY knitting, origami, decorations. Each book being a native iOS App relying on webviews and a JS bridge.</p>
+				</div>
+				<div class="project clearfix">
+					<img class="logo" src="stellaria.png" />
+					<h3><a href="http://www.stellaria.fr">Stellaria</a></h3>
+					<p>Stellaria is an astrology app for iOS. It consumes a web service that I wrote in Python as a wrapper around a C library. The display is done using SVG.</p>
+				</div>
+				<div class="project clearfix">
+					<img class="logo" src="calenda.png" />
+					<h3><a href="http://www.calenda.org">Calenda</a></h3>
+					<p>Calenda is a calendar for humanities and scientific events. Written in PHP, it uses Lucene/Solr for search. It uses AJAX for some parts of the UI.</p>
+				</div>
+				<div class="project clearfix">
+					<img class="logo" src="cagliostro.png" />
+					<h3><a href="https://www.youtube.com/watch?v=lsZ5mHgufvI">La Comptesse de Cagliostro</a></h3>
+					<p>An electronic novel app, with text, images and videos. Coded as two native apps, one for iOS and one for Android. Can be downloaded from free.</p>
+				</div>
+				<div class="project clearfix">
+					<img class="logo" src="semantica.png" />
+					<h3><a href="https://github.com/Kivutar/semantica">Semantica</a></h3>
+					<p>Semantic database with strong support of Unicode and graph vizualisation. Written using Perl Dancer, RDF, RDFS, OWL, SPARQL and sigma.js</p>
+				</div>
 			</section>
 
 			<section id="experience" class="container clearfix">
@@ -276,14 +297,23 @@
 				</ul>
 			</section>
 
-			<section class="container clearfix">
+			<section id="education" class="container clearfix">
 				<h2>Education</h2>
 				<ul class="column-right">
-					<li><b>I've been learning programming by myself from I am 12 years old.</b></li>
-					<li><b>2008/2009 :</b> AFPA (Visual Studio, C#, ASP, Windows Forms, Merise, UML, SQL Server)</li>
-					<li><b>2004/2006 :</b> Institut Supérieur d'Ostéopathie</li>
-					<li><b>2003/2004 :</b> Préparation au concours de Kinésithérapeute</li>
-					<li><b>2002 :</b> Baccalauréat série Scientifique Science de l'Ingénieur</li>
+					<li>
+						<div class="position">AFPA <span class="date">2008-2009</span></div>
+						<div class="mission">Visual Studio, C#, ASP, Windows Forms, Merise, UML, SQL Server</div>
+					</li>
+					<li>
+						<div class="position">Institut Supérieur d'Ostéopathie <span class="date">2004-2006</span></div>
+					</li>
+					<li>
+						<div class="position">Préparation au concours de Kinésithérapeute <span class="date">2003-2004</span></div>
+					</li>
+					<li>
+						<div class="position">Baccalauréat série Scientifique Science de l'Ingénieur <span class="date">2002</span></div>
+					</li>
+					<li><strong>I've been learning programming by myself from I am 12 years old.</strong></li>
 				</ul>
 			</section>
 
