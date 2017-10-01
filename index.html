@@ -42,7 +42,7 @@
 				margin-right: 50px;
 				float: left;
 				border-radius: 50%;
-				background: url(https://avatars3.githubusercontent.com/u/442722?v=3&s=460) 50% 50%;
+				background: url(https://avatars3.githubusercontent.com/u/442722?v=3&s=460) 20% 50%;
 				background-size: 110%;
 			}
 			.column-right {
@@ -106,7 +106,6 @@
 			.logo {
 				width: 100px;
 				height: 100px;
-				/*background-color: #7f8c8d;*/
 				float: left;
 				margin-right: 20px;
 				margin-bottom: 20px;
@@ -114,7 +113,7 @@
 			}
 
 			#skills li {
-				padding: 8px 0;
+				padding-top: 8px;
 			}
 
 			#skills .category {
@@ -128,16 +127,19 @@
 			#skills .values {
 				width: 70%;
 				float: left;
+				margin-bottom: -8px;
 			}
 
 			.tag {
+				display: inline-block;
 				background-color: #ecf0f1;
 				padding: 5px 10px;
 				position: relative;
 				margin-right: 20px;
+				margin-bottom: 8px;
 			}
 
-			.tag:before {
+			.tag:after {
 				content: "";
 				position: absolute;
 				top:0;
@@ -179,14 +181,14 @@
 	</head>
 	<body>
 		<script type="application/ld+json">
-		{
-		"@context": "http://schema.org/",
-		"@type": "Person",
-		"name": "Jean-André Santoni",
-		"jobTitle": "Software Developer",
-		"telephone": "+84937396413",
-		"url": "http://cv.kivutar.me"
-		}
+			{
+				"@context": "http://schema.org/",
+				"@type": "Person",
+				"name": "Jean-André Santoni",
+				"jobTitle": "Software Developer",
+				"telephone": "+84937396413",
+				"url": "http://cv.kivutar.me"
+			}
 		</script>
 		<header>
 			<div class="container clearfix">
@@ -194,7 +196,7 @@
 				
 				<div class="column-right">			
 					<h1>Jean-André Santoni</h1>
-					<h2>Web & Mobile Development</h2>
+					<h2>Web &amp; Mobile Development</h2>
 					<p class="contact">
 					<a href="https://www.google.com/maps/place/H%C3%B4+Chi+Minh,+Vietnam/@10.7652417,106.4034488,10z/data=!3m1!4b1!4m5!3m4!1s0x31752eefdb25d923:0x4bcf54ddca2b7214!8m2!3d10.746903!4d106.676292?dcr=0"><i class="fa fa-map-marker"></i> Saigon, Vietnam</a> |
 					<a href="tel:+84937396413<"><i class="fa fa-phone"></i>&nbsp;(+84)937396413</a> |
@@ -209,7 +211,13 @@
 				<ul class="column-right">
 					<li class="clearfix">
 						<div class="category">Languages:</div>
-						<div class="values"><span class="tag">Perl</span> <span class="tag">Python</span> <span class="tag">PHP</span> <span class="tag">Java</span> <span class="tag">Obj&nbsp;C</span></div>
+						<div class="values">
+							<span class="tag">Perl</span>
+							<span class="tag">Python</span>
+							<span class="tag">Java</span>
+							<span class="tag">C</span>
+							<span class="tag">Obj&nbsp;C</span>
+						</div>
 					</li>
 					<li class="clearfix">
 						<div class="category">Databases:</div>
